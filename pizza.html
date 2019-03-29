@@ -36,7 +36,6 @@
                 <option value="4">Extra Large</option>
               </select>
 
-
               <button type="submit" class="btn btn-info">Make me a Pizza</button>
           </div>
         </form>
@@ -49,13 +48,35 @@
         <div id="addPizza">
           <button type="button" class="btn btn-outline-dark" id="resetMenu">Get more Pizza!</button>
         </div>
+<!-- FORM FOR SECOND PIZZA -->
+      <form id="menuSecond">
+        <div id="order2">
+            <div class="form-group">
+              <input type="checkbox" name="topping2" value="Sausage-Egg "> Sausage-Egg<br>
+              <input type="checkbox" name="topping2" value="Smoked Sausage"> Smoked Sausage<br>
+              <input type="checkbox" name="topping2" value="Grilled Corn"> Grilled Corn<br>
+              <input type="checkbox" name="topping2" value="Black Olives"> Black Olives<br>
+              <input type="checkbox" name="topping2" value="BBQ chicken"> BBQ chicken<br>
+              <input type="checkbox" name="topping2" value="Pineapple"> Pineapple<br>
+              <input type="checkbox" name="topping2" value="Spinach"> Spinach<br>
+              <input type="checkbox" name="topping2" value="Hum"> Hum<br>
+              <input type="checkbox" name="topping2" value="Beef"> Beef<br>
+            </div>
+
+            <select class="form-control" id="size2">
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">Extra Large</option>
+            </select>
+
+            <button type="submit" class="btn btn-info">Make me a Pizza</button>
+        </div>
+      </form>
           <ul id="result2">
-                <p>Second Pizza <span class="result2"></span> does it!!! this Pizza cost only <span class="price2"></span> $.</p>
+                <p>Second Pizza <span class="result2"></span> does it!!! this Pizza cost only <span class="price2"></span> $.<br>
+                The total is <span class="totalSum"></span> $.</p>
           </ul>
-
-
-
-
 
       </div>
     </div>
