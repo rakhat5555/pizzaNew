@@ -12,7 +12,7 @@
       <div class="jumbotron">
         <h1>Italian Pizza</h1>
         <form id="menu">
-          <div class="form-group">
+          <div class="form-group" id="inputName">
             <label for="name">Your Name</label>
             <input type="text" required id="name">
           </div>
@@ -40,43 +40,19 @@
               <button type="submit" class="btn btn-info">Make me a Pizza</button>
           </div>
         </form>
-        <form id="menu2">
 
-          <div id="order2">
-              <div class="form-group">
-                <input type="checkbox" name="topping" value="Sausage-Egg "> Sausage-Egg<br>
-                <input type="checkbox" name="topping1" value="Smoked Sausage"> Smoked Sausage<br>
-                <input type="checkbox" name="topping1" value="Grilled Corn"> Grilled Corn<br>
-                <input type="checkbox" name="topping1" value="Black Olives"> Black Olives<br>
-                <input type="checkbox" name="topping1" value="BBQ chicken"> BBQ chicken<br>
-                <input type="checkbox" name="topping1" value="Pineapple"> Pineapple<br>
-                <input type="checkbox" name="topping1" value="Spinach"> Spinach<br>
-                <input type="checkbox" name="topping1" value="Hum"> Hum<br>
-                <input type="checkbox" name="topping1" value="Beef"> Beef<br>
-              </div>
-
-              <select class="form-control" id="size">
-                <option value="1">Small</option>
-                <option value="2">Medium</option>
-                <option value="3">Large</option>
-                <option value="4">Extra Large</option>
-              </select>
-
-
-              <button type="submit" class="btn btn-info">add this also</button>
-          </div>
-        </form>
         <div id="result">
           <ul>
             <p>Hey <span class="name"></span> ! Thank you for your order!!!<span class="result"> Looks Yummy!!! YOUR PIZZA will be </span> does it!!! this Pizza cost only <span class="price"></span> $. Just enjoy!!! </p>
           </ul>
         </div>
+        <div id="addPizza">
+          <button type="button" class="btn btn-outline-dark" id="resetMenu">Get more Pizza!</button>
+        </div>
           <ul id="result2">
                 <p>Second Pizza <span class="result2"></span> does it!!! this Pizza cost only <span class="price2"></span> $.</p>
           </ul>
-          <div id="addPizza">
-            <button type="button" class="btn btn-outline-dark" id="resetMenu">Get more Pizza!</button>
-          </div>
+
 
 
 
