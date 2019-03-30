@@ -24,9 +24,13 @@ return(sum)
 
 // interface logic
 $(document).ready(function() {
+  // debugger;
   $(".openMenu").click(function() {
     $(".showMenu").show();
-  })
+    $(".openMenu").hide();
+    $(".hero-text").hide();
+
+  });
 
 var menuList = new Menu()
 
