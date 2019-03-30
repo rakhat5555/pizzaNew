@@ -11,19 +11,22 @@ Menu.prototype.getPrice = function() {
 return(sum)
   console.log(sum);
 }
-function Address(street, city, state, zip, apt) {
-  this.street = street;
-  this.city = city;
-  this.state = state;
-  this.zip = zip;
-  this.apt = apt;
-}
-Address.prototype.fullAddress =  function() {
-  return this.street + " " + this.city + ", " + this.state + " " + this.zip + " " + this.apt;
-}
+// function Address(street, city, state, zip, apt) {
+//   this.street = street;
+//   this.city = city;
+//   this.state = state;
+//   this.zip = zip;
+//   this.apt = apt;
+// }
+// Address.prototype.fullAddress =  function() {
+//   return this.street + " " + this.city + ", " + this.state + " " + this.zip + " " + this.apt;
+// }
 
 // interface logic
 $(document).ready(function() {
+  $(".openMenu").click(function() {
+    $(".showMenu").show();
+  })
 
 var menuList = new Menu()
 
@@ -38,8 +41,11 @@ var menuList = new Menu()
 
       });
       // shows what the user choice
-        $(".result").append( "<li>" + " with " +  menuList.toppings + " and " + "</li>")
+        $(".result").append( "<li>" + " with Love " +  menuList.toppings + " and " + "</li>")
       // menuList.getPrice();
+        if (menuList.getPrice()<=5) {
+          alert("working")
+        }
       $(".price").append(menuList.getPrice())
 
       $(".name").text(nameInput.toUpperCase())
@@ -48,6 +54,7 @@ var menuList = new Menu()
 
       $("#addPizza").show();
       $("#result2").hide();
+      $(".deliver").show();
 
     });
     $("#resetMenu").click(function() {
@@ -69,7 +76,7 @@ var menuList = new Menu()
 
           });
 
-            $(".result2").append( "<li>" + " with " +  menuListSecond.toppings + " and " + "</li>")
+            $(".result2").append( "<li>" + " with love " +  menuListSecond.toppings + " and " + "</li>")
             $(".price2").append(menuListSecond.getPrice())
             $(".totalSum").append(menuListSecond.getPrice() + menuList.getPrice())
           $("#result2").show();
@@ -78,22 +85,19 @@ var menuList = new Menu()
         });
 // deliver section
     $(".deliver").click(function() {
-      $("#address").show();
+      $("#address").toggle();
     });
     // var addressInput = new Address;
     $("form#address").submit(function(event) {
       event.preventDefault();
+
       var addresses = ['street', 'city', 'state', 'zip', 'apt'];
        addresses.forEach(function(address) {
         var addressInput = $("input#" + address).val();
-         $("." + address).text(addressInput)
+         $("." + address).text(addressInput.toUpperCase())
        });
        $("#addressShow").show();
        $("#address").hide();
        $(".deliver").hide();
-    })
-
-
-
-
+    });
 });

@@ -7,9 +7,18 @@
    <script src="js/scripts.js"></script>
     <title>Pizza</title>
   </head>
-  <body>
+  <body><br>
+
+    <!-- <img src="img/pizza.jpg" alt=""> -->
     <div class="container">
-      <div class="jumbotron">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:100px">Italian Pizza</h1>
+          <h3>Click below to navigate the menu. <br>Stop on by or call us at 503-917-9000 to place your order.</h3>
+          <button class="openMenu">Order</button>
+        </div>
+      </div>
+      <div class="showMenu">
         <h1>Italian Pizza</h1>
         <form id="menu">
           <div class="form-group" id="inputName">
@@ -28,7 +37,7 @@
                 <input type="checkbox" name="topping" value="Hum"> Hum<br>
                 <input type="checkbox" name="topping" value="Beef"> Beef<br>
               </div>
-
+              <p>What about Size???</p>
               <select class="form-control" id="size">
                 <option value="1">Small</option>
                 <option value="2">Medium</option>
@@ -45,9 +54,11 @@
               <p>Hey <span class="name"></span> ! Thank you for your order!!!<span class="result"> Looks Yummy!!! YOUR PIZZA will be </span> does it!!! this Pizza cost only <span class="price"></span> $. Just enjoy!!! </p>
             </ul>
           </div>
+
           <div id="addPizza">
             <button type="button" class="btn btn-outline-dark" id="resetMenu">Get more Pizza!</button>
           </div>
+            <br><div class="deliver"><span class="click">Click here </span> to deliver to your House!!!</div><br>
     <!-- FORM FOR SECOND PIZZA -->
           <form id="menuSecond">
             <div id="order2">
@@ -62,7 +73,7 @@
                   <input type="checkbox" name="topping2" value="Hum"> Hum<br>
                   <input type="checkbox" name="topping2" value="Beef"> Beef<br>
                 </div>
-
+                <p>How big Pizza do you want???</p>
                 <select class="form-control" id="size2">
                   <option value="1">Small</option>
                   <option value="2">Medium</option>
@@ -76,8 +87,9 @@
           <ul id="result2">
                 <p>Second Pizza <span class="result2"></span> does it!!! this Pizza cost only <span class="price2"></span> $.<br>
                 The total is <span class="totalSum"></span> $.</p>
+
           </ul><br>
-          <div class="deliver">Click here to deliver to your House!!!</div>
+
           <form id="address">
             <div class="form-group">
               <label for="street">Street</label>
@@ -101,8 +113,8 @@
             </div>
             <button type="submit" class="btn btn-outline-dark">DELIVER!</button>
           </form>
-          <div id="addressShow"> Your Pizza will arrive in 15 min from now!!! TO
-            <span class="street"></span> <span class="city"></span>, <span class="state"><span class="zip"></span></span> APT<span class="apt"></span>
+          <div id="addressShow"> Your Pizza will arrive to
+            <span class="street"></span> <span class="city"></span>, <span class="state"><span class="zip"></span></span> APT# <span class="apt"></span> in 15 min from now!!!
           </div>
       </div>
     </div>
