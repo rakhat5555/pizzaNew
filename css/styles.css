@@ -1,6 +1,9 @@
 #result , #addPizza {
   display: none
 }
-#result2, #order2{
+#result2, #order2 , #address, #addressShow{
+  display: none
+}
+#address, #addressShow {
   display: none
 }
