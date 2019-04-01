@@ -10,15 +10,17 @@ _A website for a pizza company where a user can choose one or more individual to
 
 
 ## Javascript Specifications
-* Spec: This program keeps track of added ingredients to pizza and uses this information to find price
-      * Input: "choose 1-9 toppings"
-      * Output: "Your pizza will cost 5x"
-* Spec: This program will find the price of the pizza based on User's desired size"
-      * Input: "small 1 , medium 2, large 3 , extra large 4"
-      * Output: "value 2X"
-* Spec: If price is less then 11$
-      * Input: "select only 1 top or extra large size"
-      * Output: "add more toppings"
+* _Spec: This program keeps track of added ingredients to pizza and uses this information to find price_
+      * _Input: "choose 1-9 toppings"_
+      * _Output: "Your pizza will cost 5x"_
+* _Spec: This program will find the price of the pizza based on User's desired size"_
+      * _Input: "small 1 , medium 2, large 3 , extra large 4"_
+      * _Output: "value 2X"_
+* _Spec: If price is less then 11$_
+      * _Input: "select only 1 top or extra large size"_
+      * _Output: "add more toppings"_
+
+
 
 ## Setup/Installation Requirements
 
