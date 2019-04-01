@@ -18,10 +18,12 @@
     </div><br>
 
     <div class="container">
-  <img src="img/pizza.jpg" alt="pizza" width="1200px">
+      <div class="hideImage">
+        <img src="img/pizza.jpg" alt="pizza" width="1200px"><br>
+      </div>
       <div class="showMenu">
         <!-- <h1>Italian Pizza</h1> -->
-      <center>  <form id="menu">
+      <center>  <form id="menu"><br>
           <div class="form-group" id="inputName">
             <label for="name">Your Name</label>
             <input type="text" required id="name">
@@ -52,14 +54,17 @@
 
           <div id="result">
             <ul>
-              <p>Hey <span class="name"></span> ! Thank you for your order!!!<span class="result"> Looks Yummy!!! YOUR PIZZA will be </span> does it!!! this Pizza cost only <span class="price"></span> $. Just enjoy!!! </p>
+            <br><p>Hey <span class="name"></span> ! Thank you for your order!!!<br>
+                <img src="img/body.jpg" alt="pizza"><br>
+                 <span class="result"> Looks Yummy!!! YOUR PIZZA will be </span>does it!!!</p>
             </ul>
+            <h4> This Pizza is only <span class="price"></span> $. Just enjoy!!! </h4>
           </div>
 
           <div id="addPizza">
             <button type="button" class="btn btn-outline-dark" id="resetMenu">Get more Pizza!</button>
           </div>
-            <br><div class="deliver"><span class="click">Click here </span> to deliver to your House!!!</div><br>
+            <br><div class="deliver"><span class="click">Click here </span> to deliver to your House!!!  FREE!!!</div><br>
     <!-- FORM FOR SECOND PIZZA -->
           <form id="menuSecond">
             <div id="order2">
@@ -86,8 +91,9 @@
             </div>
           </form>
           <ul id="result2">
-                <p>Second Pizza <span class="result2"></span> does it!!! this Pizza cost only <span class="price2"></span> $.<br>
-                The total is <span class="totalSum"></span> $.</p>
+                <p>Second Pizza <span class="result2"></span> does it!!!</p>
+                <h4> this Pizza cost only <span class="price2"></span> $. </h4><br>
+              <h3>  The total is <span class="totalSum"></span> $.</h3>
 
           </ul><br>
 
@@ -116,7 +122,7 @@
           </form>
           <div id="addressShow"> Your Pizza will arrive to
             <span class="street"></span> <span class="city"></span>, <span class="state"><span class="zip"></span></span> APT# <span class="apt"></span> in 15 min from now!!!
-          </div>
+          </div><br>
       </div>
     </div>
   </body>

@@ -29,6 +29,7 @@ $(document).ready(function() {
     $(".showMenu").show();
     $(".openMenu").hide();
     $(".hero-text").hide();
+    $(".hideImage").hide();
 
   });
 
@@ -45,10 +46,10 @@ var menuList = new Menu()
 
       });
       // shows what the user choice
-        $(".result").append( "<li>" + " with Love " +  menuList.toppings + " and " + "</li>")
+        $(".result").append( "<li>" + " with Love, " +  menuList.toppings + " and " + "</li>")
       // menuList.getPrice();
-        if (menuList.getPrice()<=5) {
-          alert("working")
+        if (menuList.getPrice()<=11) {
+          alert("Add more toppings!!!")
         }
       $(".price").append(menuList.getPrice())
 
@@ -85,6 +86,7 @@ var menuList = new Menu()
             $(".totalSum").append(menuListSecond.getPrice() + menuList.getPrice())
           $("#result2").show();
           $("#order2").hide();
+          // $(".hideImage").hide();
 
         });
 // deliver section
